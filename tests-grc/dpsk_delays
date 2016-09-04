@@ -1,0 +1,9 @@
+delays:
+sps = 2
+for DBPSK: 46
+for DQPSK: 92
+
+sps = 4
+for DBPSK: 43
+for DQPSK: 86
+

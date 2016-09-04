@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://github.com/argilo/sdr-examples -->
+<html lang="en" class=" is-copy-enabled is-u2f-enabled"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <link crossorigin="anonymous" href="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/frameworks-08a7ddd5fb70803ff8390bcae350fe24cca52e8a1266dedb493c666c1d625366.css" integrity="sha256-CKfd1ftwgD/4OQvK41D+JMylLooSZt7bSTxmbB1iU2Y=" media="all" rel="stylesheet">
+    <link crossorigin="anonymous" href="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/github-b28da47089b34d9dcbec7dbea0300d38d35cb192c333ae7e08c25dbd6d1f5f0b.css" integrity="sha256-so2kcImzTZ3L7H2+oDANONNcsZLDM65+CMJdvW0fXws=" media="all" rel="stylesheet">
+    
+    
+    <link crossorigin="anonymous" href="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/site-3b27741f2e22b48854ecee715112d86949a7c9e4e502f41739c4578cc65283da.css" integrity="sha256-Oyd0Hy4itIhU7O5xURLYaUmnyeTlAvQXOcRXjMZSg9o=" media="all" rel="stylesheet">
+    
+    
+
+    <link as="script" href="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/frameworks-149d9338c2665172870825c78fa48fdcca4d431d067cbf5fda7120d9e39cc738.js" rel="preload">
+    
+    <link as="script" href="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/github-6d45f8e570048b075fc77ba5e77cde9b3b2311f734a04114e27916e3993debec.js" rel="preload">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    
+    
+    <title>GitHub - argilo/sdr-examples: A collection of GNU Radio flow graphs</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="https://github.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://github.com/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://github.com/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://github.com/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://github.com/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars2.githubusercontent.com/u/583749?v=3&amp;s=400" name="twitter:image:src"><meta content="@github" name="twitter:site"><meta content="summary" name="twitter:card"><meta content="argilo/sdr-examples" name="twitter:title"><meta content="sdr-examples - A collection of GNU Radio flow graphs" name="twitter:description">
+      <meta content="https://avatars2.githubusercontent.com/u/583749?v=3&amp;s=400" property="og:image"><meta content="GitHub" property="og:site_name"><meta content="object" property="og:type"><meta content="argilo/sdr-examples" property="og:title"><meta content="https://github.com/argilo/sdr-examples" property="og:url"><meta content="sdr-examples - A collection of GNU Radio flow graphs" property="og:description">
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient="">
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host"><meta content="github" name="octolytics-app-id"><meta content="05DC90A5:65A8:BEB7AD6:577E71CE" name="octolytics-dimension-request_id">
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" name="analytics-location">
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="OTZlZWNmZGVlYzAzMzkxYmM5OTVhNWQ0MTNiMjg2ZGI0MTY3ZjAxYjNhN2IyODg4NDcyNzM5ZDY3YjE3MDE1M3x7InJlbW90ZV9hZGRyZXNzIjoiNS4yMjAuMTQ0LjE2NSIsInJlcXVlc3RfaWQiOiIwNURDOTBBNTo2NUE4OkJFQjdBRDY6NTc3RTcxQ0UiLCJ0aW1lc3RhbXAiOjE0Njc5MDQ0NjN9">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta name="html-safe-nonce" content="bdeccfde61ca815744c21ec24960d7121e197387">
+    <meta content="6fc509cd20f0362865c52664398f591927f9fb11" name="form-nonce">
+
+    <meta http-equiv="x-pjax-version" content="0a627b6ef199cdefef805e24a4c71c46">
+    
+
+      
+  <meta name="description" content="sdr-examples - A collection of GNU Radio flow graphs">
+  <meta name="go-import" content="github.com/argilo/sdr-examples git https://github.com/argilo/sdr-examples.git">
+
+  <meta content="583749" name="octolytics-dimension-user_id"><meta content="argilo" name="octolytics-dimension-user_login"><meta content="15533150" name="octolytics-dimension-repository_id"><meta content="argilo/sdr-examples" name="octolytics-dimension-repository_nwo"><meta content="true" name="octolytics-dimension-repository_public"><meta content="false" name="octolytics-dimension-repository_is_fork"><meta content="15533150" name="octolytics-dimension-repository_network_root_id"><meta content="argilo/sdr-examples" name="octolytics-dimension-repository_network_root_nwo">
+  <link href="https://github.com/argilo/sdr-examples/commits/master.atom" rel="alternate" title="Recent Commits to sdr-examples:master" type="application/atom+xml">
+
+
+      <link rel="canonical" href="https://github.com/argilo/sdr-examples" data-pjax-transient="">
+  <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+
+  <body class="logged-out   env-production linux vis-public">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"></div>
+    <a href="https://github.com/argilo/sdr-examples#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+    </a>
+
+    <button class="btn-link right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav site-header-nav-main">
+        <a href="https://github.com/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="https://github.com/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
+          Open source
+</a>        <a href="https://github.com/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/features /business/customers /business">
+          Business
+</a>        <a href="https://github.com/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /explore">
+          Explore
+</a>      </nav>
+
+      <div class="site-header-actions">
+            <a class="btn btn-primary site-header-actions-btn" href="https://github.com/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+          <a class="btn site-header-actions-btn mr-2" href="https://github.com/login?return_to=%2Fargilo%2Fsdr-examples" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+        <nav class="site-header-nav site-header-nav-secondary">
+          <a class="nav-item" href="https://github.com/pricing">Pricing</a>
+          <a class="nav-item" href="https://github.com/blog">Blog</a>
+          <a class="nav-item" href="https://help.github.com/">Support</a>
+          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/argilo/sdr-examples/search" class="js-site-search-form" data-scoped-search-url="/argilo/sdr-examples/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text" class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable" data-hotkey="s" name="q" placeholder="Search" aria-label="Search this repository" data-unscoped-placeholder="Search GitHub" data-scoped-placeholder="Search" tabindex="1" autocapitalize="off">
+    </label>
+</form></div>
+
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container="">
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fargilo%2Fsdr-examples" class="btn btn-sm btn-with-count tooltipped tooltipped-n" aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+    Watch
+  </a>
+  <a class="social-count" href="https://github.com/argilo/sdr-examples/watchers">
+    35
+  </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fargilo%2Fsdr-examples" class="btn btn-sm btn-with-count tooltipped tooltipped-n" aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="https://github.com/argilo/sdr-examples/stargazers">
+      115
+    </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fargilo%2Fsdr-examples" class="btn btn-sm btn-with-count tooltipped tooltipped-n" aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+        Fork
+      </a>
+
+    <a href="https://github.com/argilo/sdr-examples/network" class="social-count">
+      34
+    </a>
+  </li>
+</ul>
+
+    <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a href="https://github.com/argilo" class="url fn" rel="author">argilo</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="https://github.com/argilo/sdr-examples" data-pjax="#js-repo-pjax-container">sdr-examples</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" data-pjax="#js-repo-pjax-container">
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/argilo/sdr-examples" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /argilo/sdr-examples" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="https://github.com/argilo/sdr-examples/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /argilo/sdr-examples/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">1</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/argilo/sdr-examples/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /argilo/sdr-examples/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">1</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+
+  <a href="https://github.com/argilo/sdr-examples/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /argilo/sdr-examples/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"></path></svg>
+    Pulse
+</a>
+  <a href="https://github.com/argilo/sdr-examples/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /argilo/sdr-examples/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+<div class="repository-meta js-details-container">
+  <span class="repository-meta-content">
+        <span itemprop="about"> A collection of GNU Radio flow graphs</span>
+  </span>
+
+</div>
+
+
+<div class="overall-summary overall-summary-bottomless">
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+    <div class="stats-switcher-wrapper">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax="" href="https://github.com/argilo/sdr-examples/commits/master">
+            <svg aria-hidden="true" class="octicon octicon-history" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"></path></svg>
+            <span class="num text-emphasized">
+              50
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax="" href="https://github.com/argilo/sdr-examples/branches">
+          <svg aria-hidden="true" class="octicon octicon-git-branch" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+          <span class="num text-emphasized">
+            3
+          </span>
+          branches
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax="" href="https://github.com/argilo/sdr-examples/releases">
+          <svg aria-hidden="true" class="octicon octicon-tag" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"></path></svg>
+          <span class="num text-emphasized">
+            0
+          </span>
+          releases
+        </a>
+      </li>
+
+      <li>
+          <a href="https://github.com/argilo/sdr-examples/graphs/contributors">
+  <svg aria-hidden="true" class="octicon octicon-organization" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M4.75 4.95C5.3 5.59 6.09 6 7 6c.91 0 1.7-.41 2.25-1.05A1.993 1.993 0 0 0 13 4c0-1.11-.89-2-2-2-.41 0-.77.13-1.08.33A3.01 3.01 0 0 0 7 0C5.58 0 4.39 1 4.08 2.33 3.77 2.13 3.41 2 3 2c-1.11 0-2 .89-2 2a1.993 1.993 0 0 0 3.75.95zm5.2-1.52c.2-.38.59-.64 1.05-.64.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2-.65 0-1.17-.53-1.19-1.17.06-.19.11-.39.14-.59zM7 .98c1.11 0 2.02.91 2.02 2.02 0 1.11-.91 2.02-2.02 2.02-1.11 0-2.02-.91-2.02-2.02C4.98 1.89 5.89.98 7 .98zM3 5.2c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.45 0 .84.27 1.05.64.03.2.08.41.14.59C4.17 4.67 3.66 5.2 3 5.2zM13 6H1c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1v2c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h1v3c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-3h1v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-2c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1zM3 13H2v-3H1V7h2v6zm7-2H9V9H8v6H6V9H5v2H4V7h6v4zm3-1h-1v3h-1V7h2v3z"></path></svg>
+    <span class="num text-emphasized">
+      2
+    </span>
+    contributors
+</a>
+
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="https://github.com/argilo/sdr-examples/search?l=python" data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#3572A5;"></span>
+                <span class="lang">Python</span>
+                <span class="percent">100.0%</span>
+              </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+    <span class="language-color" aria-label="Python 100.0%" style="width:100.0%; background-color:#3572A5;" itemprop="keywords">Python</span>
+  </div>
+
+
+<div class="file-navigation in-mid-page">
+
+    <div class="select-menu get-repo-select-menu js-menu-container right select-menu-modal-right">
+  <button class="btn btn-sm btn-primary select-menu-button js-menu-target" title="Clone or download this repository" type="button" aria-label="Clone or download this repository" tabindex="0" aria-haspopup="true">
+    <span>Clone or download</span>
+  </button>
+
+  <div class="select-menu-modal-holder dropdown-menu-content js-menu-content" aria-hidden="true">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container ">
+      <div class="clone-options https-clone-options">
+        <button class="btn-link btn-change-protocol js-toggler-target right" type="submit">Use SSH</button>
+
+        <h4 class="mb-2">
+          Clone with HTTPS
+          <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank">
+            <svg aria-hidden="true" class="octicon octicon-question" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
+          </a>
+        </h4>
+        <p class="mb-1 get-repo-decription-text">
+          Use Git or checkout with SVN using the web URL.
+        </p>
+
+        <div class="input-group js-zeroclipboard-container">
+  <input type="text" class="form-control input-monospace input-sm js-zeroclipboard-target js-url-field" value="https://github.com/argilo/sdr-examples.git" aria-label="Clone this repository at https://github.com/argilo/sdr-examples.git" readonly="">
+  <div class="input-group-button">
+    <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg></button>
+  </div>
+</div>
+
+      </div>
+
+      <div class="clone-options ssh-clone-options">
+        <button class="btn-link btn-change-protocol js-toggler-target right" type="submit">Use HTTPS</button>
+
+        <h4 class="mb-2">
+          Clone with SSH
+          <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank">
+            <svg aria-hidden="true" class="octicon octicon-question" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
+          </a>
+        </h4>
+        <p class="mb-1 get-repo-decription-text">
+          Use an SSH key and passphrase from account.
+        </p>
+
+        <div class="input-group js-zeroclipboard-container">
+  <input type="text" class="form-control input-monospace input-sm js-zeroclipboard-target js-url-field" value="git@github.com:argilo/sdr-examples.git" aria-label="Clone this repository at git@github.com:argilo/sdr-examples.git" readonly="">
+  <div class="input-group-button">
+    <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg></button>
+  </div>
+</div>
+
+      </div>
+
+      <div class="mt-2">
+        
+<a href="https://github.com/argilo/sdr-examples/archive/master.zip" class="btn btn-outline get-repo-btn
+" rel="nofollow" data-ga-click="Repository, download zip, location:repo overview">
+  Download ZIP
+</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="btn-group right">
+
+    <a href="https://github.com/argilo/sdr-examples/find/master" class="btn btn-sm empty-icon right" data-pjax="" data-hotkey="t" data-ga-click="Repository, find file, location:repo overview">
+      Find file
+    </a>
+  </div>
+
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w" title="master" type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax="" aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="https://github.com/argilo/sdr-examples#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="https://github.com/argilo/sdr-examples#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/argilo/sdr-examples/tree/calibrated" data-name="calibrated" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="calibrated">
+                calibrated
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected" href="https://github.com/argilo/sdr-examples/tree/master" data-name="master" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="master">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/argilo/sdr-examples/tree/update-dtv" data-name="update-dtv" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="update-dtv">
+                update-dtv
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+      <button type="button" class="btn btn-sm disabled tooltipped tooltipped-n new-pull-request-btn" aria-label="You must be signed in to create a pull request">
+        New pull request
+      </button>
+
+  <div class="breadcrumb">
+    
+  </div>
+</div>
+
+
+
+
+
+  <div class="commit-tease js-details-container">
+    <span class="right">
+      Latest commit
+      <a class="commit-tease-sha" href="https://github.com/argilo/sdr-examples/commit/d6c402efc3e40b568c214193aa29dd42e25a7bae" data-pjax="">
+        d6c402e
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2016-04-29T04:14:22Z" title="Apr 29, 2016, 8:44 AM GMT+4:30">on Apr 29</relative-time></span>
+    </span>
+
+
+    <span class="commit-author-section">
+      <img alt="@argilo" class="avatar" height="20" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/583749" width="20">
+      <a href="https://github.com/argilo" class="user-mention" rel="author">argilo</a>
+    </span>
+
+        <a href="https://github.com/argilo/sdr-examples/commit/d6c402efc3e40b568c214193aa29dd42e25a7bae" class="message" data-pjax="true" title="Update to new DTV API.">Update to new DTV API.</a>
+    
+
+  </div>
+
+
+<div class="file-wrap">
+
+  <a href="https://github.com/argilo/sdr-examples/tree/d6c402efc3e40b568c214193aa29dd42e25a7bae" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax="">
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/tree/master/ntsc" class="js-navigation-open" id="df6fe9a731182efb711dbbe7906d53b3-e52935759a68cc1562d281aa366af0587744daec" title="ntsc">ntsc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/f15ce90195177c8aaf309c9be4b7b1e05865d16b" class="message" data-pjax="true" title="First stab at an NTSC encoder that handles video.">First stab at an NTSC encoder that handles video.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-08-16T06:19:46Z" title="Aug 16, 2014, 10:49 AM GMT+4:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/tree/master/tutorial" class="js-navigation-open" id="0575c8d592fb7b088226750aceec2b4e-5837ccf8ab6b32e55a2cc3a053d319b5269cd5a8" title="tutorial">tutorial</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/b83eabcaf13e7f3b26b11762cea5800317f29128" class="message" data-pjax="true" title="Add PSK and QAM examples.">Add PSK and QAM examples.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-04-05T19:33:02Z" title="Apr 6, 2014, 12:03 AM GMT+4:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/COPYING" class="js-navigation-open" id="7116ef0705885343c9e1b2171a06be0e-94a9ed024d3859793618152ea559a168bbcbb5e2" itemprop="license" title="COPYING">COPYING</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/e54bbfebb5eca3bb9f6dbdc6f1076582c8e2ba12" class="message" data-pjax="true" title="Add multi-mode transmitter.">Add multi-mode transmitter.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-12-30T17:53:57Z" title="Dec 30, 2013, 9:23 PM GMT+3:30">3 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/README.rst" class="js-navigation-open" id="88b99bb28683bd5b7e3a204826ead112-bb4a9d3478c33aa202414a3d3f54f91364d07f97" title="README.rst">README.rst</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/8a988687610ac2656c5a86b0b3c8c4dd8b3968a5" class="message" data-pjax="true" title="Correct the list of packages to install when making new images">Correct the list of packages to install when making new images</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-03-28T14:20:26Z" title="Mar 28, 2015, 6:50 PM GMT+4:30">a year ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/ask_tx.grc" class="js-navigation-open" id="b9e34a81972ef57e63ebd5b842036fd8-eb31d0d469655a342f5ffbf0c88a276cfc38f09e" title="ask_tx.grc">ask_tx.grc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/759811fea9a019ee33e093ba1cc17380583dca14" class="message" data-pjax="true" title="Add FSK and ASK transmitters and receivers.">Add FSK and ASK transmitters and receivers.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-23T23:37:22Z" title="Mar 24, 2014, 4:07 AM GMT+4:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/atsc-b200.py" class="js-navigation-open" id="c92352e845bb402a3d00acb987a59cd1-dae9ebd09f7e79059f1119c15503ba4d880eb691" title="atsc-b200.py">atsc-b200.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/4ed34c3067f7e6186bad33fcde2eb6931b9a375d" class="message" data-pjax="true" title="Put frequency back to 441 MHz (cable channel 60).">Put frequency back to 441 MHz (cable channel 60).</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-04-21T19:03:05Z" title="Apr 21, 2014, 11:33 PM GMT+4:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/atsc-blade-usb2.py" class="js-navigation-open" id="56a43129d1537d0fa490536e46cc0917-c5fd830a93d7254c80bc5bdf5e441f8648b643fc" title="atsc-blade-usb2.py">atsc-blade-usb2.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/8dd8897928610fff807ca487ad599f68949d74a2" class="message" data-pjax="true" title="Update copyright dates.">Update copyright dates.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-02-09T18:55:30Z" title="Feb 9, 2014, 10:25 PM GMT+3:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/atsc-blade.py" class="js-navigation-open" id="cce4ef29a4302bf8e5f5b71ebe6130c6-14029c7b8263cf36e36a2e8ebebb7d13587f2f79" title="atsc-blade.py">atsc-blade.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/8dd8897928610fff807ca487ad599f68949d74a2" class="message" data-pjax="true" title="Update copyright dates.">Update copyright dates.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-02-09T18:55:30Z" title="Feb 9, 2014, 10:25 PM GMT+3:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/atsc-hackrf.py" class="js-navigation-open" id="8ccbbac71c9fd50b98a162a801668b16-197c2cd3425126e9eb61189998b46d8ca4e4f5e5" title="atsc-hackrf.py">atsc-hackrf.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/7eec1af70b619618869d3fc9774d44555c294d11" class="message" data-pjax="true" title="Add HackRF ATSC transmitter.">Add HackRF ATSC transmitter.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-08-15T04:17:13Z" title="Aug 15, 2014, 8:47 AM GMT+4:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/ceiling_fan_rx.grc" class="js-navigation-open" id="725bbc1f2bba94a675ad40a1709776ea-edcc23a3365eb08315765320f78bc658dd418385" title="ceiling_fan_rx.grc">ceiling_fan_rx.grc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/330aa7370a0e9df5329229261858623b63ea868c" class="message" data-pjax="true" title="Add ceiling fan receiver.">Add ceiling fan receiver.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-23T02:47:08Z" title="Mar 23, 2014, 7:17 AM GMT+4:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/ceiling_fan_tx.grc" class="js-navigation-open" id="0abfb8448caf84136fcf635705d972e3-5ed704cd51443f5c9d408f8ae3ddf1fdc73add15" title="ceiling_fan_tx.grc">ceiling_fan_tx.grc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/68f39b365039ca44d0fd7fc340516083b4cd14bd" class="message" data-pjax="true" title="Add ceiling fan transmitter example.">Add ceiling fan transmitter example.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-23T02:27:08Z" title="Mar 23, 2014, 6:57 AM GMT+4:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/dvb-freq-fix.py" class="js-navigation-open" id="1fe06f42c057a7492b9437e8f38c9674-75981a21c9a294962341dc44fa4d5d869bedb9b5" title="dvb-freq-fix.py">dvb-freq-fix.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/25c118d9f7e4cf722b18e6f408ed60f6d02514bd" class="message" data-pjax="true" title="Fix DVB module patching script.">Fix DVB module patching script.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-02T03:10:21Z" title="Mar 2, 2014, 6:40 AM GMT+3:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/dvbt-b200.py" class="js-navigation-open" id="063b6d124c87e0c34d356a3d6a6c5953-51ee5d178b4aed0db30d90d0fb27d375b784944a" title="dvbt-b200.py">dvbt-b200.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/39e080afb3f811fe3143b7aadad9ce544a9314ec" class="message" data-pjax="true" title="Set the clock rate in the device address for faster startup.">Set the clock rate in the device address for faster startup.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-04-19T00:36:26Z" title="Apr 19, 2014, 5:06 AM GMT+4:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/dvbt-blade.py" class="js-navigation-open" id="f3b130b95ca135e7e95c7a8ad2fd3820-49932f366cd822d7384143abc712e61124b7d2d5" title="dvbt-blade.py">dvbt-blade.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/6ce089e42447916ae4cbcf9ae9d2effad198b1a8" class="message" data-pjax="true" title="Incorporate Ron&#39;s latest changes.">Incorporate Ron's latest changes.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-02T04:23:24Z" title="Mar 2, 2014, 7:53 AM GMT+3:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/dvbt-hackrf.py" class="js-navigation-open" id="2582698c76806259caa52dd14a63caab-624366af8d15c54dabdabb5df6ddf0387383e468" title="dvbt-hackrf.py">dvbt-hackrf.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/d6c402efc3e40b568c214193aa29dd42e25a7bae" class="message" data-pjax="true" title="Update to new DTV API.">Update to new DTV API.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-29T04:14:22Z" title="Apr 29, 2016, 8:44 AM GMT+4:30">2 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/dvbt-tx.py" class="js-navigation-open" id="210d1354dac0539347b26e19edbcdf3a-6f9aea67cb7109eba9b3e5a09fd184e91e642451" title="dvbt-tx.py">dvbt-tx.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/8045246edfef959f6543207278a5dd5fe72942db" class="message" data-pjax="true" title="Add W6RZ&#39;s DVB-T transmitter code.">Add W6RZ's DVB-T transmitter code.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-02T04:04:27Z" title="Mar 2, 2014, 7:34 AM GMT+3:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/gfsk_tx.grc" class="js-navigation-open" id="29508a21310f91f0f62076ab7f87c1f4-fefc0a58a13efad9a865f059c318fdb3be60a1d0" title="gfsk_tx.grc">gfsk_tx.grc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/759811fea9a019ee33e093ba1cc17380583dca14" class="message" data-pjax="true" title="Add FSK and ASK transmitters and receivers.">Add FSK and ASK transmitters and receivers.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-23T23:37:22Z" title="Mar 24, 2014, 4:07 AM GMT+4:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/multi_tx.grc" class="js-navigation-open" id="3a53007f33bbd23038462740b55d14a7-5745c24415424b6b0edc08c74f3bd0fd82bfadcb" title="multi_tx.grc">multi_tx.grc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/92b8af4b1e95deed8260728e676e533923c7df1a" class="message" data-pjax="true" title="Revert changes to multi_tx. I didn&#39;t mean to check them in.">Revert changes to multi_tx. I didn't mean to check them in.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-02-03T00:56:32Z" title="Feb 3, 2014, 4:26 AM GMT+3:30">3 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/multi_tx.py" class="js-navigation-open" id="dfde1fe4fb1ac5fabcfb8fea1d0689a5-eac30024f086cb4b47a21e835747170761c02ff0" title="multi_tx.py">multi_tx.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/92b8af4b1e95deed8260728e676e533923c7df1a" class="message" data-pjax="true" title="Revert changes to multi_tx. I didn&#39;t mean to check them in.">Revert changes to multi_tx. I didn't mean to check them in.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-02-03T00:56:32Z" title="Feb 3, 2014, 4:26 AM GMT+3:30">3 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/multi_tx.wav" class="js-navigation-open" id="aee1f330f7abc364a522c31679a3c831-5d6b120e72ffc3d389f193bc782e68c92f4d75d1" title="multi_tx.wav">multi_tx.wav</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/e54bbfebb5eca3bb9f6dbdc6f1076582c8e2ba12" class="message" data-pjax="true" title="Add multi-mode transmitter.">Add multi-mode transmitter.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-12-30T17:53:57Z" title="Dec 30, 2013, 9:23 PM GMT+3:30">3 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/pager_rx.py" class="js-navigation-open" id="1c0c9eba86bd85c31a9e42d494e29e9b-41988b5f30616112c96be0d292d0670917dc39b8" title="pager_rx.py">pager_rx.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/04e427c30bef2cd97c6ff338d9f22a87fdb4b59d" class="message" data-pjax="true" title="Add a gain slider to both pager examples.">Add a gain slider to both pager examples.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-01-03T03:12:20Z" title="Jan 3, 2014, 6:42 AM GMT+3:30">3 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/pager_rx_929.py" class="js-navigation-open" id="7dc4ece525a243fc9f8fd85b1b437566-c7bc62ef0154173fc824d053e45f399fc069b844" title="pager_rx_929.py">pager_rx_929.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/04e427c30bef2cd97c6ff338d9f22a87fdb4b59d" class="message" data-pjax="true" title="Add a gain slider to both pager examples.">Add a gain slider to both pager examples.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-01-03T03:12:20Z" title="Jan 3, 2014, 6:42 AM GMT+3:30">3 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/va3odg.grc" class="js-navigation-open" id="a71b240e28eed822567a1f4b307b34bb-f720a4608fd9151a132c8b68bb255d729c140347" title="va3odg.grc">va3odg.grc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/d1ae08647e4d9e04790efa5cf2b5b531332bb6b3" class="message" data-pjax="true" title="Improve D-STAR reception and add description to README.">Improve D-STAR reception and add description to README.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-02-02T16:32:13Z" title="Feb 2, 2014, 8:02 PM GMT+3:30">3 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/va3odg.py" class="js-navigation-open" id="7c5ca182b555a131ccf00a182a0e1df2-da3c3bb617fdea9126015e8c0b3eadf0ccf6d63b" title="va3odg.py">va3odg.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/d1ae08647e4d9e04790efa5cf2b5b531332bb6b3" class="message" data-pjax="true" title="Improve D-STAR reception and add description to README.">Improve D-STAR reception and add description to README.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-02-02T16:32:13Z" title="Feb 2, 2014, 8:02 PM GMT+3:30">3 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/va3rft.grc" class="js-navigation-open" id="9fd731165268ce97794ca3b3cfb3d268-8a6cb7c208f07f6373010d9267e2a55cdcf696d1" title="va3rft.grc">va3rft.grc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/251db7a2e78fd67b5fdd9c486b42520a048ce2a0" class="message" data-pjax="true" title="Add D-STAR receive example. (Requires latest gr-dsd.)">Add D-STAR receive example. (Requires latest gr-dsd.)</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-02-01T15:06:59Z" title="Feb 1, 2014, 6:36 PM GMT+3:30">3 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/va3rft.py" class="js-navigation-open" id="4a641eefaf995fdc496f18979d15bdc2-bee83937d4b96476ec1dfddbb992b70e56335ed4" title="va3rft.py">va3rft.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/251db7a2e78fd67b5fdd9c486b42520a048ce2a0" class="message" data-pjax="true" title="Add D-STAR receive example. (Requires latest gr-dsd.)">Add D-STAR receive example. (Requires latest gr-dsd.)</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-02-01T15:06:59Z" title="Feb 1, 2014, 6:36 PM GMT+3:30">3 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/argilo/sdr-examples/blob/master/wspr_hackrf.grc" class="js-navigation-open" id="fb97642b22fbbbec9918f59ad07d59d9-c09d1623a14bad7cecc39972df4f2ca365af0222" title="wspr_hackrf.grc">wspr_hackrf.grc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/argilo/sdr-examples/commit/f5d864d73135e1fa6f041c1ec1d0b7ffde19e804" class="message" data-pjax="true" title="Add WSPR example for HackRF.">Add WSPR example for HackRF.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-08-17T18:40:37Z" title="Aug 17, 2014, 11:10 PM GMT+4:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <div id="readme" class="readme boxed-group clearfix announce instapaper_body rst">
+    <h3>
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      README.rst
+    </h3>
+
+      <article class="markdown-body entry-content" itemprop="text"><pre># Copyright 2013-2014 Clayton Smith
+#
+# This file is part of sdr-examples
+#
+# sdr-examples is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3, or (at your option)
+# any later version.
+#
+# sdr-examples is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with sdr-examples; see the file COPYING.  If not, write to
+# the Free Software Foundation, Inc., 51 Franklin Street,
+# Boston, MA 02110-1301, USA.
+</pre>
+<a name="user-content-sdr-examples"></a>
+<h2><a id="user-content-sdr-examples" class="anchor" href="https://github.com/argilo/sdr-examples#sdr-examples" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>sdr-examples</h2>
+<p>Author: Clayton Smith (<a href="mailto:argilo@gmail.com">argilo@gmail.com</a>)</p>
+<p>This project is a collection of GNU Radio examples created for a
+tutorial session given at the Ottawa Amateur Radio Club.</p>
+<a name="user-content-multi-tx-grc-multi-tx-py"></a>
+<h3><a id="user-content-multi_txgrc--multi_txpy" class="anchor" href="https://github.com/argilo/sdr-examples#multi_txgrc--multi_txpy" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>multi_tx.grc &amp; multi_tx.py</h3>
+<p>This example transmits the following signals simultaneously:</p>
+<ol>
+<li>Narrowband FM at 440.9 MHz</li>
+<li>Wideband FM at 441.0 MHz</li>
+<li>AM at 441.120 MHz</li>
+<li>LSB at 441.131 MHz</li>
+<li>USB at 441.134 MHz</li>
+<li>CW at 441.140 MHz</li>
+<li>PSK31 at 441.142 MHz</li>
+</ol>
+<p>It is built for the BladeRF, but it should easily be adaptable to other
+boards such as the USRP B200/210 or HackRF.</p>
+<p>Output power is split approximately equally between the six signals,
+with the gain set such that no clipping occurs.</p>
+<a name="user-content-pager-rx-py"></a>
+<h3><a id="user-content-pager_rxpy" class="anchor" href="https://github.com/argilo/sdr-examples#pager_rxpy" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>pager_rx.py</h3>
+<p>This example allows the reception of the FLEX protocol used to send
+messages to pagers.  It is intended for use with a RTL-SDR dongle
+such as the NooElec TV28T.</p>
+<p>To use it, first set the frequency correction slider to the correct
+value to match your dongle's crystal.  The gain slider should be set to
+the highest value which does not cause clipping.  (If it's too high,
+you'll see spurious signals appearing.)</p>
+<p>Choose a band (929-930 MHz or 931-932 MHz) by clicking the appropriate
+radio button.  The band waterfall will display all signals in that
+band.  Click on a signal to tune to its channel.  When transmitting,
+you should see the channel's signal in the channel waterfall display.
+When the frequency correction slider is set correctly, the signal
+should be centered in the channel waterfall display.</p>
+<a name="user-content-pager-rx-929-py"></a>
+<h3><a id="user-content-pager_rx_929py" class="anchor" href="https://github.com/argilo/sdr-examples#pager_rx_929py" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>pager_rx_929.py</h3>
+<p>This example demonstrates reception of multiple FLEX channels
+simultaneously.  It tunes three Ottawa-area FLEX transmitters at
+929.1875, 929.2875 and 929.6625 MHz.  As with the previous example,
+for correct decoding the frequency correction slider must be set
+so that the signals appear in the center of the channel waterfall.
+The gain slider should be set as high as possible without causing
+spurious signals to appear.</p>
+<a name="user-content-va3rft-grc-va3rft-py"></a>
+<h3><a id="user-content-va3rftgrc--va3rftpy" class="anchor" href="https://github.com/argilo/sdr-examples#va3rftgrc--va3rftpy" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>va3rft.grc &amp; va3rft.py</h3>
+<p>This example receives an Ottawa-area DMR digital voice repeater,
+VA3RFT on 444.475 MHz.  It is intended for use with an RTL-SDR dongle
+such as the NooElec TV28T.  It depends on my GNU Radio DSD block,
+which can be downloaded at <a href="https://github.com/argilo/gr-dsd">https://github.com/argilo/gr-dsd</a>.</p>
+<p>To use it, set the frequency correction slider to the correct value
+to match your dongle's crystal.  If necessary, set the gain slider to
+an appropriate value to prevent clipping.</p>
+<p>If the frequency correction slider is set correctly, you should see
+transmissions appearing in the center of the band in the middle of
+the waterfall.  Even when nobody is using the repeater, it transmits
+some packets about once every 80 seconds.</p>
+<a name="user-content-va3odg-grc-va3odg-py"></a>
+<h3><a id="user-content-va3odggrc--va3odgpy" class="anchor" href="https://github.com/argilo/sdr-examples#va3odggrc--va3odgpy" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>va3odg.grc &amp; va3odg.py</h3>
+<p>This example is very similar to the DMR receiver above, but instead it
+receives D-STAR.  It is intended to receive the Ottawa-area D-STAR
+repeater VA3ODG on 444.850 MHz.</p>
+<p>Since the D-STAR receiver in DSD is not yet optimized for GMSK
+reception, I have worked around this problem by doing the GMSK
+demodulation in GNU Radio (with a Clock Recovery MM and a Binary
+Slicer block), then re-modulating the signal before passing it on to
+DSD.  This improves the bit error rate.</p>
+<a name="user-content-atsc-blade-py-atsc-blade-usb2-py"></a>
+<h3><a id="user-content-atsc-bladepy--atsc-blade-usb2py" class="anchor" href="https://github.com/argilo/sdr-examples#atsc-bladepy--atsc-blade-usb2py" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>atsc-blade.py &amp; atsc-blade-usb2.py</h3>
+<p>These examples transmit an ATSC digital television signal using the
+BladeRF.  An file containing an MPEG 2 transport stream must be
+supplied as input.  MPEG 2 transport streams can be produced with
+tools such as avconv and OpenCaster.  The first example, atsc-blade.py
+requires USB 3.0 to work properly, while the second example,
+atsc-blade-usb2.py reduces the output sample rate so as to run on a
+USB 2.0 port.  Both examples transmit on 438-444 MHz, but this can be
+changed by adjusting the center_freq variable.</p>
+<a name="user-content-making-bootable-usb-images-for-gnuradio"></a>
+<h2><a id="user-content-making-bootable-usb-images-for-gnuradio" class="anchor" href="https://github.com/argilo/sdr-examples#making-bootable-usb-images-for-gnuradio" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Making Bootable USB Images for GNURadio</h2>
+<a name="user-content-install-some-kind-of-ubuntu-debian"></a>
+<h3><a id="user-content-install-some-kind-of-ubuntudebian" class="anchor" href="https://github.com/argilo/sdr-examples#install-some-kind-of-ubuntudebian" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Some Kind of Ubuntu/Debian</h3>
+<p>Install Xubuntu 14.04 LTS 64-bit (or newer) onto a 8 GB or larger flash drive.
+Force the root partition to be 7.5 GB so that it can be installed on
+<em>approximately</em> 8 GB drives that may vary in size a bit.</p>
+<p>Boot Xubuntu, install updates and restart.</p>
+<p>In /etc/default/rcS, set "UTC=no" so it won't mess up the system clock on
+Windows laptops.</p>
+<p>Install a few essential pieces in order to make it easier for people to use
+the system and work with these example flow graphs:</p>
+<pre>sudo apt-get install linux-firmware-nonfree
+
+sudo apt-get install git
+git clone --recursive https://github.com/argilo/sdr-examples.git
+</pre>
+<a name="user-content-install-gnuradio-and-related-tools"></a>
+<h3><a id="user-content-install-gnuradio-and-related-tools" class="anchor" href="https://github.com/argilo/sdr-examples#install-gnuradio-and-related-tools" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install GNURadio and Related Tools</h3>
+<p>Install the core GNURadio packages:</p>
+<pre>sudo add-apt-repository ppa:gqrx/releases
+sudo apt-get update
+sudo apt-get install gnuradio gnuradio-dev gnuradio-doc gqrx-sdr
+</pre>
+<p>Install drivers for some of the most common SDR dongles:</p>
+<pre>sudo apt-get install rtl-sdr hackrf bladerf-host \
+    gr-fcdproplus qthid-fcd-controller
+</pre>
+<p>Add GRC and gqrx to the favourites in the xfce menu.</p>
+<a name="user-content-compress-bootable-image"></a>
+<h3><a id="user-content-compress-bootable-image" class="anchor" href="https://github.com/argilo/sdr-examples#compress-bootable-image" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Compress Bootable Image</h3>
+<p>Purge old kernels.</p>
+<pre>sudo apt-get install localepurge
+sudo apt-get clean
+cat /dev/zero &gt; zero.fill ; sync ; sleep 1 ; sync ; rm -rf zero.fill
+</pre>
+<p>Shut down.</p>
+<pre>sudo dd if=/dev/sdb bs=1M count=7500 |\
+    gzip --rsyncable &gt; bootable_image.img.gz
+</pre>
+
+</article>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>© 2016 <span title="0.10063s from github-fe145-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com/" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      
+      <script crossorigin="anonymous" integrity="sha256-FJ2TOMJmUXKHCCXHj6SP3MpNQx0GfL9f2nEg2eOcxzg=" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/frameworks-149d9338c2665172870825c78fa48fdcca4d431d067cbf5fda7120d9e39cc738.js"></script>
+      <script async="async" crossorigin="anonymous" integrity="sha256-bUX45XAEiwdfx3ul53zemzsjEfc0oEEU4nkW45k96+w=" src="./GitHub - argilo_sdr-examples_ A collection of GNU Radio flow graphs_files/github-6d45f8e570048b075fc77ba5e77cde9b3b2311f734a04114e27916e3993debec.js"></script>
+      
+      
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  
+
+
+</body></html>

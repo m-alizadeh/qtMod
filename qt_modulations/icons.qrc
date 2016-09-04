@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>icons/arrow.png</file>
+        <file>icons/constellation_icon.png</file>
+        <file>icons/constellation_icon_2.png</file>
+        <file>icons/input_icon.png</file>
+        <file>icons/input_icon_2.svg</file>
+        <file>icons/mod_icon.png</file>
+        <file>icons/radio_icon.png</file>
+    </qresource>
+</RCC>

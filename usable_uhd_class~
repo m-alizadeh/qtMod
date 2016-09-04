@@ -1,0 +1,34 @@
+uhd necessary commands:
+
+<< Tuning the center frequency >>
+
+class:
+uhd::tune_request_t
+
+methods:
+device_addr_t uhd::tune_request_t::args
+uhd::tune_request_t::tune_request_t
+
+Description:
+To tune the RF and DSP frequency "manually" or "automatically"
+The relationship between LO_offset and "carrier_freq" and "DSP_freq":
+carrier_freq = LO_offset - DSP_freq.
+
+So the maximum carrier_freq - LO_offset must be the half of the DSP BW.
+If you set the LO_freq and the carrier_freq, the DSP_freq will be set automatically.
+
+<< Finding and identifying USRP devices >>
+
+uhd::device_addr_t::device_addr_t (const std::string & args = "")
+Create a device address from an args string.
+
+Mapping of key/value pairs for locating devices on the system. When left empty, the device discovery routines will search all available transports on the system (ethernet, usb...).
+
+To narrow down the discovery process to a particular device, specify a transport key/value pair specific to your device.
+
+Ex, to find a usrp2: my_dev_addr["addr"] = [resolvable_hostname_or_ip]
+
+
+
+
+

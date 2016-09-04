@@ -1,0 +1,13 @@
+transport layer control:
+
+<<< Changing read/write buffer sizes >>>
+sudo sysctl -w net.core.rmem_max=<new value>
+sudo sysctl -w net.core.wmem_max=<new value>
+
+<< Setting for allowing thread priority of the UHD >>
+Non-privileged users need special permission to change the scheduling priority. Add the following line to the file /etc/security/limits.conf:
+
+@GROUP    - rtprio    99
+
+Replace GROUP with a group in which your user is a member. You may need to log out and log back into the account for the settings to take effect. In most Linux distributions, a list of groups and group members can be found in the file /etc/group. 
+
